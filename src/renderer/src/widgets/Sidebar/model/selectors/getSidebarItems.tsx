@@ -14,7 +14,7 @@ export const getSidebarItems = createSelector(getUser, () => {
     {
       path: getRoutePdf(),
       Icon: <FormOutlined rev={undefined} />,
-      text: 'Создать PDF'
+      text: 'Создание открытки'
     }
   ]
 

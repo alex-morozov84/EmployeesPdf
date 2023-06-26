@@ -6,14 +6,14 @@ import { AppRouter } from './providers/router'
 import { useUserActions } from '@renderer/entities/User'
 
 function App(): JSX.Element {
-  const { ipcRenderer } = window.electron
+  // const { ipcRenderer } = window.electron
   const { reauth } = useUserActions()
 
   // Получение путей для понимания куда класть файл БД
   useEffect(() => {
     const getPaths = async () => {
-      const response = await ipcRenderer.invoke('getPath')
-      console.log(response)
+      // const response = await ipcRenderer.invoke('getPath')
+      // console.log(response)
     }
     getPaths()
 

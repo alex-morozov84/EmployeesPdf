@@ -10,7 +10,7 @@ export const MakePdfPage = () => {
   const [chosenEmployees, setChosenEmployees] = useState<Employee[]>([])
 
   return (
-    <Layout title="Создание PDF">
+    <Layout title="Создание открытки">
       <div className={classNames(cls.Wrapper)}>
         <ChooseEmployeesList
           chosenEmployees={chosenEmployees}

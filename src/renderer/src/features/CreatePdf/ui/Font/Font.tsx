@@ -3,6 +3,7 @@ import React, { useCallback } from 'react'
 import { RcFile, UploadChangeParam } from 'antd/es/upload'
 import { classNames } from '@renderer/shared/lib/classNames/classNames'
 import cls from './Font.module.scss'
+import { Widget } from '../../../../shared/ui/Widget'
 
 interface FontProps {
   fontSize: number
@@ -37,7 +38,7 @@ export const Font = ({ fontSize, setFontSize, setFont }: FontProps) => {
   )
 
   return (
-    <div className={classNames(cls.Wrapper)}>
+    <Widget title="Шрифт">
       <div className={classNames(cls.FontSizeSelect)}>
         <span>Размер шрифта: </span>
         <Select
@@ -54,8 +55,8 @@ export const Font = ({ fontSize, setFontSize, setFont }: FontProps) => {
         onChange={fontUpload}
         accept=".ttf"
       >
-        <Button>Загрузите файл шрифта в формате .ttf (при необходимости)</Button>
+        <Button type="primary">Загрузите файл шрифта в формате .ttf</Button>
       </Upload>
-    </div>
+    </Widget>
   )
 }

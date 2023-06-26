@@ -14,6 +14,12 @@ export const EmployeesList = () => {
   const [employeeDrawerOpen, setEmployeeDrawerOpen] = useState(false)
   const [employee, setEmployee] = useState<Employee>({} as Employee)
 
+  const sortedEmployees = [...employees]?.sort((a, b) => {
+    const lastnameA = a.lastname.toLowerCase() ?? ''
+    const lastnameB = b.lastname.toLowerCase() ?? ''
+    return lastnameA.localeCompare(lastnameB)
+  })
+
   useEffect(() => {
     dispatch(fetchEmployees())
   }, [dispatch])
@@ -64,7 +70,7 @@ export const EmployeesList = () => {
         <List
           size="small"
           bordered
-          dataSource={employees}
+          dataSource={sortedEmployees}
           renderItem={renderItem}
         />
         <ChangeEmployeeData

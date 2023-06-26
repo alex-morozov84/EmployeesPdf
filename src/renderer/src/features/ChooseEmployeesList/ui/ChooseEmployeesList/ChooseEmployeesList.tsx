@@ -22,12 +22,18 @@ export const ChooseEmployeesList = ({
   const employees = useEmployees()
   const [checkedAll, setCheckedAll] = useState(true)
 
+  const sortedEmployees = [...employees]?.sort((a, b) => {
+    const lastnameA = a.lastname.toLowerCase() ?? ''
+    const lastnameB = b.lastname.toLowerCase() ?? ''
+    return lastnameA.localeCompare(lastnameB)
+  })
+
   useEffect(() => {
     dispatch(fetchEmployees())
   }, [dispatch])
 
   useEffect(() => {
-    setChosenEmployees(employees)
+    setChosenEmployees(sortedEmployees)
     // eslint-disable-next-line
   }, [employees])
 
@@ -37,7 +43,9 @@ export const ChooseEmployeesList = ({
 
       if (checked) {
         const updatedArray = [...chosenEmployees, employee].sort((a, b) => {
-          return a.id - b.id
+          const lastnameA = a.lastname.toLowerCase() ?? ''
+          const lastnameB = b.lastname.toLowerCase() ?? ''
+          return lastnameA.localeCompare(lastnameB)
         })
         setChosenEmployees(updatedArray)
       } else {
@@ -68,13 +76,13 @@ export const ChooseEmployeesList = ({
       const checked = e.target.checked
       if (checked) {
         setCheckedAll(true)
-        setChosenEmployees(employees)
+        setChosenEmployees(sortedEmployees)
       } else {
         setCheckedAll(false)
         setChosenEmployees([])
       }
     },
-    [employees, setChosenEmployees]
+    [setChosenEmployees, sortedEmployees]
   )
 
   return (
@@ -91,7 +99,7 @@ export const ChooseEmployeesList = ({
         <List
           size="small"
           bordered
-          dataSource={employees}
+          dataSource={sortedEmployees}
           renderItem={renderItem}
         />
       </Widget>
