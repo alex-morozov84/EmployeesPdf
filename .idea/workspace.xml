@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4187502-7018-44c5-98ed-172b600af810" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/ConfirmModal/ConfirmModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/FileNameModal/FileNameModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/icon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/build/icon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/controllers/files.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/controllers/files.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/features/ChooseEmployeesList/ui/ChooseEmployeesList/ChooseEmployeesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/features/ChooseEmployeesList/ui/ChooseEmployeesList/ChooseEmployeesList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/CreatePdf/CreatePdf.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/CreatePdf/CreatePdf.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/Description/Description.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/Description/Description.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/Description/Description.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/Description/Description.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/Font/Font.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/Font/Font.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/Font/Font.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/features/CreatePdf/ui/Font/Font.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/features/EmployeesList/ui/EmployeesList/EmployeesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/features/EmployeesList/ui/EmployeesList/EmployeesList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/pages/MakePdfPage/ui/MakePdfPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/pages/MakePdfPage/ui/MakePdfPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/widgets/Sidebar/model/selectors/getSidebarItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/widgets/Sidebar/model/selectors/getSidebarItems.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +80,8 @@
       <workItem from="1687174342658" duration="10779000" />
       <workItem from="1687240809025" duration="36239000" />
       <workItem from="1687347478558" duration="1756000" />
-      <workItem from="1687760823440" duration="15494000" />
+      <workItem from="1687760823440" duration="16150000" />
+      <workItem from="1687847325384" duration="2114000" />
     </task>
     <servers />
   </component>

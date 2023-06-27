@@ -35,7 +35,7 @@ export const CreatePdf = ({ employees }: CreatePdfProps) => {
   const { ipcRenderer } = window.electron
   const [font, setFont] = useState<string | Uint8Array | ArrayBuffer>()
   const [fontSize, setFontSize] = useState(25)
-  const [stringsDistance, setStringsDistance] = useState(30)
+  const [stringsDistance, setStringsDistance] = useState(25)
   const [textOffset, setTextOffset] = useState(0)
   const [file, setFile] = useState<ArrayBuffer>()
   const [fileName, setFileName] = useState('')
@@ -63,9 +63,9 @@ export const CreatePdf = ({ employees }: CreatePdfProps) => {
 
   const drawData = useCallback(
     ({ page, position, appeal, name, font, fontSize, appealWidth, nameWidth }: DrawData) => {
-      const yTop = 800 - textOffset
-      const yMiddle = 530 - textOffset
-      const yBottom = 260 - textOffset
+      const yTop = 780 - textOffset
+      const yMiddle = 510 - textOffset
+      const yBottom = 240 - textOffset
       const yPos: Record<Position, number[]> = {
         top: [yTop, yTop - stringsDistance],
         middle: [yMiddle, yMiddle - stringsDistance],
